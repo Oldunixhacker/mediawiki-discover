@@ -1,0 +1,56 @@
+{
+	"name": "Discover",
+	"version": "0.1",
+	"author": [
+		"https://github.com/TylerMS887 (Tyler Magee Shields)"
+	],
+	"url": "https://www.mediawiki.org/wiki/Extension:BoilerPlate",
+	"descriptionmsg": "Allows readers to access a clean interface to browsing a wiki",
+	"license-name": "GPL-3.0-or-later",
+	"type": "experimental",
+	"AutoloadClasses": {
+		"ExploreHooks": "includes/ExploreHooks.php",
+		"ExplorePage": "includes/Explore.php"
+	},
+	"config": {
+		"Explore as the Main Page": {
+			"value": true,
+			"description": "Shows Explore as the main page (modern 2022 Main Page experience). When disabled, the classic 2003 Main Page experience will be used but you can always open Explore by searching 'Special:Explore'."
+		},
+		"Show tip of the day on Explore": {
+			"value": true,
+			"description": "Provides some tips when on Explore."
+		},
+    "DEVELOPERS: Custom JS/CSS on Explore": {
+      "value": false,
+      "description": "For developers only."
+    }
+	},
+	"callback": "BoilerPlateHooks::onExtensionLoad",
+	"ExtensionMessagesFiles": {
+		"BoilerPlateAlias": "BoilerPlate.i18n.alias.php"
+	},
+	"Hooks": {
+		"NameOfHook": "BoilerPlateHooks::onNameOfHook"
+	},
+	"MessagesDirs": {
+		"BoilerPlate": [
+			"i18n"
+		]
+	},
+	"ResourceModules": {
+		"ext.explore.mp2022": {
+			"scripts": [
+				"resources/mainPageRedirect.js"
+			]
+		}
+	},
+	"ResourceFileModulePaths": {
+		"localBasePath": "",
+		"remoteExtPath": "BoilerPlate"
+	},
+	"SpecialPages": {
+		"Explore": "SpecialExplore"
+	},
+	"manifest_version": 2
+}
