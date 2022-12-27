@@ -13,18 +13,18 @@
 		"ExplorePage": "includes/Explore.php"
 	},
 	"config": {
-		"Explore as the Main Page": {
+		"mp2022": {
 			"value": true,
-			"description": "Shows Explore as the main page (modern 2022 Main Page experience). When disabled, the classic 2003 Main Page experience will be used but you can always open Explore by searching 'Special:Explore'."
+			"description": "Show Explore as the main page"
 		},
-		"Show tip of the day on Explore": {
+		"exploreTips": {
 			"value": true,
-			"description": "Provides some tips when on Explore."
+			"description": "Enable tip of the day on Explore"
 		},
-    "DEVELOPERS: Custom JS/CSS on Explore": {
-      "value": false,
-      "description": "For developers only."
-    }
+    		"jsCssOn": {
+      			"value": false,
+      			"description": "Allow user to specify their own scripts and stylesheets for Explore"
+    		}
 	},
 	"callback": "BoilerPlateHooks::onExtensionLoad",
 	"ExtensionMessagesFiles": {
