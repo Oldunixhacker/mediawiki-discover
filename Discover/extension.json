@@ -50,7 +50,7 @@
 		"remoteExtPath": "BoilerPlate"
 	},
 	"SpecialPages": {
-		"Explore": "SpecialExplore"
+		"Explore": "Explore"
 	},
 	"manifest_version": 2
 }
